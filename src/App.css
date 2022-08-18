@@ -1,38 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+  --Strongcyan: hsl(172, 67%, 45%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+
+*{
+  font-family: 'Space Mono', monospace;
+}
+html,body{
+  margin: 0;
+  height: 100%;
+  background-color: var(--Lightgrayishcyan);
+  color: var(--Verydarkcyan);
+}
+
+#root{
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box{
+  background-color: var(--White);
+  width: 50%;
+  height: 44%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bill{
+  display: flex;
+  flex-direction: column;
+}
+
+.bill input{
+  height: 4vh;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Verylightgrayishcyan);
+  direction: rtl;
+  font-size: 24px;
+}
+
+.bill input:focus{
+  outline: none !important;
+  border:1px solid var(--Strongcyan);
+}
+
+.tip{
+  height: 20vh;
+}
+
+.tipbtnup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 15vh;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.tipbtnup button{
+  background-color: var(--Verydarkcyan);
+  font-size: 24px;
+  padding: 10px;
+  width: 30%;
+  border: 0px;
+  border-radius: 5px;
+  color: var(--White);
+}
+
+
+
+
+.tipbtnup input{
+  background-color: var(--Verylightgrayishcyan);
+  font-size: 24px;
+  padding: 10px;
+  width: 25%;
+  border: 0px;
+  border-radius: 5px;
+  direction: rtl;
+}
+
+.people{
+  display: flex;
+  flex-direction: column;
+}
+
+.people input{
+  background-color: var(--Verylightgrayishcyan);
+  height: 4vh;
+  border-radius: 5px;
+  border: 0px;
+  direction: rtl;
+  font-size: 24px;
+}
+
+.people input:focus{
+  outline: none !important;
+  border:1px solid var(--Strongcyan);
+}
+
+.right{
+  color: var(--White);
+  height: 87%;
+  background-color: var(--Verydarkcyan);
+  width: 50%;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+
+.boxes{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.firstbox, .secondbox{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bold{
+  color: var(--Grayishcyan);
+}
+
+.money{
+  color: var(--Strongcyan);
+  font-size: 24px;
+  margin: 0;
+}
+
+.btnreset{
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+}
+
+.btnreset button{
+  background-color: var(--Strongcyan);
+  border: 0px;
+  width: 90%;
+  height: 30%;
+  border-radius: 10px;
+  font-size: 24px;
 }
