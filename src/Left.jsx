@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
-import ButtonLeft from "./Button.js"
+import ButtonLeft from "./Button.jsx"
 
 const Left = (props) => {
     const tiphandler = (event) => {
